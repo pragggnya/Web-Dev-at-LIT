@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Free Web tutorials">
+<meta name="author" content="LIT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body
+{
+    margin:0;
+}
+header 
+{
+  background-color: #c9c21d;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav 
+{
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #9d8b2da1;
+}
+
+nav ul 
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li
+{
+    background-color:#eddada;
+    line-height: 82px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+	
+nav ul li:hover
+{
+    background-color:gray;
+}
+	
+a
+{   text-decoration:none;
+}
+article {
+  float: left;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 200px; 
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+		<header>
+		 <h2>Utkal Soft Pvt. Ltd.</h2>
+		</header>
+		
+		<section>
+				<nav>
+					<ul>
+					  <li><a href="#">Home</a></li>
+					  <li><a href="#">About</a></li>
+					  <li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<article>
+						<h1>Welcome TO Utkal Soft</h1>
+						<p>LLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining </p>
+						<p>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</article>
+		</section>
+		
+		<footer>
+	<p>Footer</p>
+		</footer>
+</body>
+</html>
