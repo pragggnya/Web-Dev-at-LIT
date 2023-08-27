@@ -1,0 +1,6 @@
+- class 10
+    - form-floating
+    - breakpoints
+    - table-bordered,borderless
+    - table-dark
+    - table-striped

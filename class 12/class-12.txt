@@ -1,0 +1,9 @@
+class 12
+	html
+		events
+			onkeyup
+			onclick
+			onblur
+	js
+		document.write
+	    	alert 

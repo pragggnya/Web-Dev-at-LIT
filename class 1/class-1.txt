@@ -1,0 +1,18 @@
+- Front end class 1
+    - class
+    - tag  
+    - css types
+    - css properties
+    - radio button
+    - date
+    - marquee
+    - input field
+    - embed video
+    - background img & color
+    - drop down
+    - img source
+    - href link
+    - new tab
+    - margin & padding
+    - adjust size wrt screen
+    - 

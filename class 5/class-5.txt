@@ -1,0 +1,9 @@
+- front end class 5
+    - min, max width
+    - multiple tags sharing css with (,)
+    - img src & source srcset
+    - box-sizing: border box
+    - symatic and non-symatic tag
+    - .all-browser > h1, browser {.............}
+    - 
+    - 

@@ -1,0 +1,7 @@
+- front end class 2
+    - embed links(maps)
+    - text align in h1
+    - float working
+    - border-radius
+    - 
+    - 
