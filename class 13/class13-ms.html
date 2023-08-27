@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap2.min.css"> -->
+    <script>
+        function lit() {
+            var x = parseInt(document.getElementById("fno").value);
+            var y = parseInt(document.getElementById("scno").value);
+            document.getElementById("hide").value = x + y;
+
+            document.getElementById("res").innerHTML = x + y;
+
+
+
+
+
+
+
+        }
+        function lit2() {
+            var z = parseInt(document.getElementById("thno").value);
+            var m = parseInt(document.getElementById("hide").value);
+
+            // alert(z);
+            // alert(m);
+
+
+            document.getElementById("val").innerHTML = m - z;
+        }
+    </script>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <div class="container">
+        <div class="container-fluid mt-5">
+            <div class="col-md-7 m-auto">
+
+                <label>Firstnum </label>
+                <input type="number" id="fno" class="form-control">
+                <label>scnd num </label>
+                <input type="number" id="scno" class="form-control">
+                <button class="btn btn-info" onclick="lit()" style="float: left; margin-top: 3px;">
+                    ADD
+                </button>
+                <button id="res" style="float: right; margin-top: 3px;">Result</button>
+                <input type="hidden" id="hide">
+                <br><br>
+                <label>Thirdnum </label>
+                <input type="number" id="thno" class="form-control" style="margin-top:3px; ">
+                <button class="btn btn-info" onclick="lit2()" style=" margin-top: 3px;">
+                    SUB
+                </button>
+                <button id="val" style=" margin-top: 3px;">
+                    Value
+                </button>
+
+
+
+            </div>
+        </div>
+    </div>
+     
+</body>
+
+</html>

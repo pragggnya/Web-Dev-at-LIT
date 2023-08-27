@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        header {
+            background: #adadad;
+            text-align: center;
+            border-style: outset;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-block: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <div class="container bg-body-tertiary mt-4">
+        <div class="container-fluid col-md-7 m-auto">
+            <label>
+                1st no.
+            </label>
+
+            <input type="text" id="no.1" class="form-control">
+
+            <label>
+                2nd no.
+            </label>
+            <input type="text" id="no.2" class="form-control">
+
+            <label>
+                Answer
+            </label>
+            <!-- addition -->
+            <!-- <input type="text" id="added" class="form-control"> -->
+            <input class="form-control" id="added" type="text" readonly>
+            <button class="btn btn-success" onclick="add()">ADD</button>
+            <!-- <h1 id="honk" >result</h1> -->
+
+            <!-- substact here -->
+            <input class="form-control" id="no.3" type="text">
+            <button class="btn btn-info" onclick="substract()">SUBSTACT</button>
+        </div>
+    </div>
+    <script>
+
+        function add() {
+            var fno = parseInt(document.getElementById("no.1").value);
+            var sno = parseInt(document.getElementById("no.2").value);
+            var ans = fno + sno;
+            // document.getElementById("honk").innerHTML=x+y;
+            document.getElementById("added").value = ans;
+        }
+
+        // function add() {
+        //     var x = parseInt(document.getElementById("no.1").value);
+        //     var y = parseInt(document.getElementById("no.2").value);
+        //     document.getElementById("added").value = x + y;
+        // }
+
+        function substract() {
+            var currentSum = parseInt(document.getElementById("added").value)
+            var tno = parseInt(document.getElementById("no.3").value);
+            var newsum = currentSum - tno;
+            document.getElementById("added").value = newsum;
+        }
+    </script>
+</body>
+
+</html>
