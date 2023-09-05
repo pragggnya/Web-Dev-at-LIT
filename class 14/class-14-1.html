@@ -1,93 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
-        function checkifempty()
-        {
-            let name=document.getElementById("name").value;
-            let Fname=document.getElementById("Fname").value;
-            let Mname=document.getElementById("Mname").value;
-            let state=document.getElementById("state").value;
+      function checkifempty() {
+        let name = document.getElementById("name").value;
+        let Fname = document.getElementById("Fname").value;
+        let Mname = document.getElementById("Mname").value;
+        let state = document.getElementById("state").value;
 
-            if(name=="")
-            {
-                alert("Please eneter your name");
-                document.write("").innerHTML
-            }
-            elseif(Fname=="")
-            {
-                alert("Please eneter your father's name");
-            }
-            elseif(Mname=="")
-            {
-                alert("Please eneter your mother's name");
-            }
-            elseif(state=="")
-            {
-                alert("Please eneter your state");
-            }
-            
-
+        if (name == "") {
+          //   alert("Please eneter your name");
+          document.getElementById("span_name").innerHTML =
+            "Please eneter your name";
+        } else if (Fname == "") {
+          document.getElementById("span_Fname").innerHTML =
+            "Please eneter your father's name";
+          document.getElementById("span_name").innerHTML = "";
+        } else if (Mname == "") {
+          document.getElementById("span_Mname").innerHTML =
+            "Please eneter your mother's name";
+          document.getElementById("span_Fname").innerHTML = "";
+        } else if (state == "") {
+          document.getElementById("span_State").innerHTML =
+            "Please eneter your state";
+          document.getElementById("span_Mname").innerHTML = "";
+        } else {
+          document.getElementById("span_State").innerHTML = "";
+          document.getElementById("span_State").innerHTML = "success";
         }
+      }
     </script>
-    <script>
+    <script></script>
+    <div
+      style="background-color: bisque; height: 300px; width: auto; margin: 0"
+    >
+      <!-- <span id="spanname">Please eneter your mother's name</span> -->
+      <table align="center">
+        <tr>
+          <td>Name</td>
+          <td>
+            <input id="name" type="text" value="" /><br /><span
+              id="span_name"
+            ></span>
+          </td>
+        </tr>
 
-    </script>
-    <div class="container container-fluid text-center">
-        <span id="spanname">Please eneter your mother's name</span>
-        <table class="table table-borderless">
-            <tr>
-                
-                <td>Name</td>
-                <td><input id="name" type="text" value=""></td>
-                <td><span></span></td>
-            </tr>
-
-
-            <tr>
-                <td>father's name</td>
-                <td><input id="Fname" type="text" value=""></td>
-            </tr>
-            <tr>
-                <td>mother's name</td>
-                <td><input id="Mname" type="text" value="" ></td>
-            </tr>
-            <tr>
-                <td>State</td>
-                <td>
-                    <select id="state">
-                        <option value="">Select your state</option>
-                        <option>Odisha</option>
-                        <option>Andhra Pradesh</option>
-                        <option>Chhatisgarh</option>
-                        <option>West bengal</option>
-                        <option>Jharkhand</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center;">
-                    <input type="submit" value="submit" onclick="checkifempty();">
-                </td>
-            </tr>
-        </table>
+        <tr>
+          <td>father's name</td>
+          <td>
+            <input id="Fname" type="text" value="" /><br /><span
+              id="span_Fname"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>mother's name</td>
+          <td>
+            <input id="Mname" type="text" value="" /><br /><span
+              id="span_Mname"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>
+            <select id="state">
+              <option value="">Select your state</option>
+              <option>Odisha</option>
+              <option>Andhra Pradesh</option>
+              <option>Chhatisgarh</option>
+              <option>West bengal</option>
+              <option>Jharkhand</option>
+            </select>
+          </td>
+          <td><span id="span_State"></span></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <input type="submit" value="submit" onclick="checkifempty();" />
+          </td>
+          <td><span id="span_Success"></span></td>
+        </tr>
+      </table>
     </div>
-
-</body>
-
+  </body>
 </html>

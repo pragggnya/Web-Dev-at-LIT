@@ -1,0 +1,11 @@
+class 15
+	- break statement
+	- type - submit
+		  - button
+	- DOM (Document Object Model)
+		- date function
+	- array
+		- intro
+		- length
+		- delete <arraylocation>
+		- indexof key
