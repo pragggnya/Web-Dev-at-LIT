@@ -1,0 +1,12 @@
+class="rounded"
+bootstrap
+	class="float-end"
+	class="text-end"
+	class="mx-auto d-block"
+	class="m-auto d-block" =>d for display
+	
+	collapse
+	accordion
+	alert
+	
+	

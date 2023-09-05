@@ -1,0 +1,8 @@
+class 17
+	opacity with images on hover & transition
+	when to use card
+	pictures side by side wit
+	position: absoulte & relative
+	
+	
+	
