@@ -1,0 +1,9 @@
+shadow
+	text-shadow: 2px 2px 2px red;
+class="img-fluid"
+class="img-thumbnail"
+class="text-start"
+class="mx-auto d-block"//its a pair
+class="link-primary"//colors for link
+class="link-visit"
+class="fixed-top"
