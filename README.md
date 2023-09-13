@@ -6,4 +6,6 @@ It will include
   4. Bootstrap
   5. J-Query
 
-Every class is made into a folder. The folder includes everything that is taught in a particular class. **Each folder has a text file which mentions the topics in that class**.
+- Every class is made into a folder. 
+- The folder includes all the dependecies of that class. 
+- **Each folder has a text file which mentions the topics taught in a class**.
