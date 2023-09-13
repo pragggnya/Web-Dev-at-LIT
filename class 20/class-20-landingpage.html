@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    <style>
+        .container{
+            height: 600px;
+            background-color: rgb(224, 142, 42);
+        }
+        li{
+            color: white;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar-example2" class="navbar fixed-top navbar-dark bg-primary px-3 mb-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <div id="scrollspyHeading" class="container">
+            <h4 id="scrollspyHeading1">First heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quibusdam nisi architecto optio illum?
+                Quasi excepturi assumenda nisi numquam iure voluptatem, explicabo, fugit, voluptates nostrum illo ipsa
+                delectus quae fugiat?</p>
+        </div>
+        <div id="scrollspyHeading" class="container">
+            <h4 id="scrollspyHeading2">Second heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere perferendis fuga esse autem saepe dolorem corporis. Aliquid, saepe. Consequuntur, enim illum! Quo, omnis nihil modi doloremque perspiciatis enim est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, libero? Aperiam vitae, animi nihil odio
+                laboriosam officiis aliquam sit fuga itaque facilis! Assumenda autem laborum quisquam neque, eaque
+                dignissimos ea.</p>
+        </div>
+        <div id="scrollspyHeading" class="container">
+            <h4 id="scrollspyHeading3">Third heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quasi accusamus reprehenderit quo quia voluptates dolore. Distinctio pariatur, est quasi cumque possimus officiis, labore ut error quia, iure consectetur explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel. Hic similique, et quos
+                assumenda
+                distinctio tempore. Aliquam placeat temporibus ipsum ratione, est accusamus quia totam accusantium minus
+                soluta. Mollitia.</p>
+        </div>
+        <div id="scrollspyHeading" class="container">
+            <h4 id="scrollspyHeading4">Fourth heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut saepe cupiditate eveniet quis neque aperiam? Totam, vitae quisquam, sunt exercitationem earum eveniet accusamus, maiores nam repellendus aperiam distinctio sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolorem porro. Sunt porro magnam
+                laboriosam
+                optio magni nobis deleniti voluptates, consectetur officiis odio aperiam a pariatur obcaecati temporibus
+                ex
+                dolores.</p>
+        </div>
+        <div id="scrollspyHeading" class="container">
+            <h4 id="scrollspyHeading5">Fifth heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus eveniet recusandae, debitis
+                doloremque ut
+                esse ipsum in quam facere expedita officiis nam laborum rem iste odit nostrum aspernatur distinctio?</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

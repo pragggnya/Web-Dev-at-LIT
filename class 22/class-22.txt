@@ -1,0 +1,3 @@
+class
+	data-bs-ride="carousel"
+	card-horizontal

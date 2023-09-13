@@ -1,0 +1,33 @@
+#section-navbar{
+    background-color: #155bd5;
+}
+li{
+    margin-left: 20px;
+}
+#section-body-hero{
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background-color: #155bd5;
+    color: white;
+}
+#row-hero{
+    position: relative;
+}
+#text-hero{
+    position: relative;
+    top: 25%;
+    font-size: 50px;    
+    font-weight: bold;
+}
+#para-hero{
+    position: relative;
+    top: 30%;
+    font-size: 20px;
+
+}
+#image-hero{
+    position: relative;
+    height: 90%;
+    width: 100%;
+}
